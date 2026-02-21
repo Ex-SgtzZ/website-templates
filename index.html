@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zayden's Portfolio</title>
+<link rel="icon" type="image/x-icon" href="main/assets/favicon.ico">
 <!-- Poppins Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- Remix Icons -->
@@ -183,6 +184,8 @@
         .templates-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            /*if i ever need to fix it later when more certs happen just replace the REPEAT with below
+            repeat(auto-fit, minmax(300px, 1fr)); */
             gap: 2rem;
             margin-top: 2rem;
             color: var(--color-secondary);
