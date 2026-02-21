@@ -53,7 +53,25 @@
                 transform: translateY(-10px);
             }
         }
+        body::-webkit-scrollbar {
+            width: 8px; /* width of the entire vertical scrollbar */
+            height: 8px; /* height of the entire horizontal scrollbar */
+        }
 
+        body::-webkit-scrollbar-track {
+            background: #9597fa; /* color of the tracking area */
+            border-radius: 40px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #2E3192; /* color of the scroll thumb */
+            border-radius: 15px; /* roundness of the scroll thumb */
+            border: 2px solid #7B68EE; /* adds padding around the thumb */
+        }
+
+        body::-webkit-scrollbar-thumb:hover {
+            background: #555; /* color on hover */
+        }
         .container {
             max-width: 1280px;
             margin: 0 auto;
@@ -309,12 +327,12 @@
             <p class="hero-subtitle">Last Updated 20/02/2026</p>
             <div class="hero-features">
                 <div class="hero-feature">
-                    <i class="ri-responsive-line"></i>
-                    <span>About Me</span>
-                </div>
-                <div class="hero-feature">
                     <i class="ri-code-line"></i>
                     <span>Certifications</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="ri-responsive-line"></i>
+                    <span>About Me</span>
                 </div>
                 <div class="hero-feature">
                     <i class="ri-palette-line"></i>
@@ -335,7 +353,7 @@
 
             <!-- HTML And CSS -->
             <div class="template-card">
-                <img src="https://i.ibb.co/zq5N3LS/html.png" width="600" alt="HTML & CSS Certification" class="template-preview" loading="lazy"></img>
+                <img src="https://i.ibb.co/zq5N3LS/html.png" width ="600" alt="HTML & CSS Certification" class="template-preview" loading="lazy"></img>
                 <div class="template-info">
                     <h2 class="template-title">HTML & CSS v8</h2>
                     <p style="color: var(--color-muted-text);">Certified</p>
@@ -398,6 +416,7 @@
                 </div>
             </div>
 
+          <!--
             <div class="template-card">
                 <iframe src="basic/five/index.html" class="template-preview" loading="lazy" title="Template Five Preview"></iframe>
                 <div class="template-info">
